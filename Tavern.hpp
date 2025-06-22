@@ -23,9 +23,9 @@ class Tavern : public MagicalBag<Creature*> {
         int tallyCategory(const std::string& category) const;
         int tallySchool(const std::string& category) const;
 
-        int releaseCreaturesBelowLevel(int level);
-        int releaseCreaturesOfCategory(const std::string& category);
-        int releaseCreaturesOfSchool(const std::string& school);
+        int releaseCreaturesBelowLevel(int level = 0);
+        int releaseCreaturesOfCategory(const std::string& category = "ALL");
+        int releaseCreaturesOfSchool(const std::string& school = "ALL");
 
         void tavernReport() const;
         void displayCreatures() const;
